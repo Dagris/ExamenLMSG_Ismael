@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de RRHH</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Gestión de Recursos Humanos</h1>
+        <h5>Agrega, elimina y rastrea a los empleados remotos.</h5>
+        <div class="contenedor">
+            <h2>Agregar Nuevo Empleado</h2>
+            <form id="formularioEmpleado">
+                <div class="campo">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="campo">
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="campo">
+                    <input type="text" id="puesto" placeholder="Puesto de trabajo" required>
+                </div>
+                <div class="campo">
+                    <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+                </div>
+                <div class="campo">
+                    <label for="remoto">
+                        <input type="checkbox" id="remoto">
+                        Trabaja de forma remota
+                    </label>
+                </div>
+                <button type="submit">Agregar Empleado</button>
+            </form>
+            <div id="listaEmpleados" class="lista-empleados"></div>
+            
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
